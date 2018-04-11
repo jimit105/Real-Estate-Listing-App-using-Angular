@@ -1,4 +1,4 @@
-export const cribs = [
+[
   {
     "id": 1,
     "type": "Condo",
