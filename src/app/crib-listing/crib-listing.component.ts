@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
-
 import { CribsService } from './../services/cribs.service';
 import { UtilService } from './../services/util.service';
+import { SortByPipe } from '../pipes/sort-by.pipe';
+import { Crib } from './../crib';
 
 @Component({
   selector: 'app-crib-listing',
@@ -25,8 +25,7 @@ export class CribListingComponent implements OnInit {
   ]
 
   constructor(
-    private http:Http, 
-    private cribsService: CribsService,
+     private cribsService: CribsService,
     private utilService: UtilService
   ) { }
 
