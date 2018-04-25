@@ -6,13 +6,12 @@ import { Crib } from './../crib';
   templateUrl: './crib-card.component.html',
   styleUrls: ['./crib-card.component.css']
 })
-export class CribCardComponent implements OnInit {
+export class CribCardComponent {
 
   @Input('crib') crib: Crib;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  
 
 }
