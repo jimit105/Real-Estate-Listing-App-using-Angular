@@ -28,10 +28,12 @@
 			</div>
 		</div>
 	</div>
-
-	<div *ngFor="let crib of cribs | sortBy: [sortField, sortDirection]">
-		<app-crib-card [crib]="crib" class="col-sm-3"></app-crib-card>
-	</div>
-
 </div>
+
+
+<div *ngFor="let crib of cribs | sortBy: [sortField, sortDirection]">
+	<app-crib-card [crib]="crib" class="col-sm-3"></app-crib-card>
+</div>
+
+
 <div class="alert alert-danger" *ngIf="error">{{ error }}</div>
